@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.genre-select {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+
+    &.selected {
+      color: red;
+    }
+  }
+}
