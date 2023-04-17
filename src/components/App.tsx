@@ -1,17 +1,15 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import "../styles/App.scss";
 import Counter from "./Counter";
 import SearchForm from "./SearchForm";
 import GenreSelect from "./GenreSelect";
-
-interface IProps {}
 
 interface IState {
   genres: Array<string>;
   counterInitialValue: number;
 }
 
-export default class App extends Component<IProps, IState> {
+export default class App extends Component<any, IState> {
   state: IState = {
     genres: ["All", "Documentary", "Comedy", "Horror", "Crime"],
     counterInitialValue: 0,

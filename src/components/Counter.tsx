@@ -1,4 +1,4 @@
-import { Component, createElement } from "react";
+import React, { Component, createElement } from "react";
 
 interface IProps {
   initialValue: number;
