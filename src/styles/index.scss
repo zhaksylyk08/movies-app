@@ -1,0 +1,15 @@
+.movie-list {
+  list-style: none;
+}
+
+.movie-tile {
+  width: 150px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    max-width: 150px;
+    max-height: 250px;
+  }
+}
