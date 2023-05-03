@@ -1,11 +1,8 @@
 import React, { Component } from "react";
+import IMovie from "../types/IMovie";
 
 interface IProps {
-  id: number;
-  title: string;
-  releaseDate: string;
-  genres: Array<string>;
-  imageUrl: string;
+  movie: IMovie;
   onClick: (movieId: number) => void;
 }
 
@@ -14,12 +11,12 @@ export default class MovieTile extends Component<IProps> {
     return (
       <div
         className="movie-tile"
-        onClick={() => this.props.onClick(this.props.id)}
+        onClick={() => this.props.onClick(this.props.movie.id)}
       >
-        <img src={this.props.imageUrl} />
-        <span>{this.props.title}</span>
-        <span>{this.props.releaseDate}</span>
-        <span>{this.props.genres.join(", ")}</span>
+        <img src={this.props.movie.imageUrl} />
+        <span>{this.props.movie.title}</span>
+        <span>{this.props.movie.releaseDate}</span>
+        <span>{this.props.movie.genres.join(", ")}</span>
       </div>
     );
   }

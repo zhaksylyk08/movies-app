@@ -5,6 +5,19 @@ body{
 
 .App {
   text-align: center;
+  padding: 50px 50px 0 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort {
+  select {
+    margin-left: 10px;
+  }
 }
 
 .section-divider {
@@ -33,7 +46,7 @@ body{
   display: flex;
 
   li {
-    margin: 20px;
+    margin-right: 20px;
   }
 }
 
