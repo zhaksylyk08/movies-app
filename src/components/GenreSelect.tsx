@@ -24,7 +24,7 @@ export default class GenreSelect extends Component<IProps, IState> {
 
   render() {
     return (
-      <ul className="genre-select">
+      <ul className="genre-select" data-testid="genres">
         {this.props.genres.map((genre, index) => (
           <li
             key={index}

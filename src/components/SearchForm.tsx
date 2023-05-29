@@ -26,6 +26,7 @@ export default class SearchForm extends Component<IProps, IState> {
     return (
       <div>
         <input
+          data-testid="search-form-input"
           placeholder="What do you want to watch?"
           value={this.state.inputValue}
           onChange={this.handleChange}

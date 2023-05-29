@@ -22,12 +22,16 @@ export default class Counter extends Component<IProps, IState> {
   };
 
   render() {
-    return createElement(
-      "div",
-      {},
-      createElement("button", { onClick: this.decrement }, "-"),
-      createElement("input", { type: "number", value: this.state.inputValue }),
-      createElement("button", { onClick: this.increment }, "+")
+    return (
+      <div>
+        <button onClick={this.decrement}>-</button>
+        <input
+          type="number"
+          value={this.state.inputValue}
+          data-testid="counter-input"
+        />
+        <button onClick={this.increment}>+</button>
+      </div>
     );
   }
 }
